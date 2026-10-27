@@ -1,0 +1,27 @@
+name: Bug report / 问题反馈
+description: Launch, download or interface issue / 启动、下载或界面问题
+body:
+  - type: markdown
+    attributes:
+      value: Do not submit credentials or raw private logs. Review the diagnostic preview first. / 请勿提交凭据或私人原始日志，请先检查诊断预览。 Security issues / 安全问题：SECURITY.md
+  - type: input
+    id: version
+    attributes:
+      label: AMBER and Windows versions / AMBER 与 Windows 版本
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps / 复现步骤
+      description: Game version, loader, language, steps and actual result / 游戏版本、加载器、语言、步骤与实际结果。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 期望结果
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Reviewed diagnostic summary or redacted error / 已检查的诊断摘要或脱敏错误
