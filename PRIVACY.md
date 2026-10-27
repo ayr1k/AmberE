@@ -9,3 +9,5 @@ Data is stored separately in `%APPDATA%/AmberE`, with a configurable game-librar
 Searches and downloads contact game, loader, Java, mod and GitHub providers as requested. Updates use only `ayr1k/AmberE`. No diagnostic reports, logs, worlds or local mod files are automatically uploaded. Optional local-mod identification sends a file hash to Modrinth. Diagnostics use an allowlist; review all logs before sharing. Language packs and backgrounds stay local.
 
 Uninstall preserves game data. Confirmed cleanup targets downloaded updates or old configuration backups, not active accounts or worlds.
+
+Trial copies and change-recovery snapshots stay in the selected local game library. Copies may include worlds when explicitly selected; configuration snapshots can contain personal data written by games or mods. They are not automatically uploaded or included in preference-template exports. Template JSON contains questionnaire preferences only; review it before sharing. Global quick search searches local instances/actions and sends no search query to a server.
