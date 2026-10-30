@@ -58,7 +58,7 @@ FunctionEnd
     Delete "$newDesktopLink"
   ${EndIf}
   FileOpen $R0 "$INSTDIR\AmberE-INSTALL.txt" w
-  FileWrite $R0 "AmberE beta 1.14. Game data remains under APPDATA/AmberE or your configured location.$\r$\nPrevious program backup: LOCALAPPDATA/AmberE/previous-program.txt$\r$\n"
+  FileWrite $R0 "AmberE 1.0.0. Game data remains under APPDATA/AmberE or your configured location.$\r$\nPrevious program backup: LOCALAPPDATA/AmberE/previous-program.txt$\r$\n"
   FileClose $R0
 !macroend
 !ifndef BUILD_UNINSTALLER
