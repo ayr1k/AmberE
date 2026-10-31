@@ -69,8 +69,8 @@
     },
     {
       "path": "docs/ROLLBACK.md",
-      "bytes": 775,
-      "sha256": "0252446997ae53afdc5ad07590e8907a30a4da00b3e9eaff495b38b2ecdcb91c"
+      "bytes": 1469,
+      "sha256": "5b7e45118af53471bdf52467e0dec0292eb83e69c5efb36b5daf9b78475a9e17"
     },
     {
       "path": "docs/SECURITY-REVIEW.md",
@@ -134,8 +134,8 @@
     },
     {
       "path": "docs/zh-CN/ROLLBACK.md",
-      "bytes": 640,
-      "sha256": "de223336011cf63d8ba856e6b47d0de831c5bbfff1eed02dc5a37a328770608b"
+      "bytes": 1217,
+      "sha256": "89e280c87db6d12111fafb44c5a7092ae686321088107af7a1f2dcc30f6be023"
     },
     {
       "path": "docs/zh-CN/SECURITY-REVIEW.md",
