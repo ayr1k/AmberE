@@ -23,4 +23,5 @@ Preserve transaction rollback, path checks, trusted download origins, checksums,
 
 Project-owned changes use MPL-2.0. Preserve all dependency and asset notices. Pull requests should explain the user-visible change, validation and remaining limitations. Do not label simulated UI checks as successful real-game tests.
 
+
 This repository builds AmberE by default. `pnpm package:installer` creates its installer; `pnpm release:source` exports source. Shared core changes originate in AMBER; retain upstream copyrights and licenses, and preserve AmberE authentication restrictions, application identity, branding and update repository when synchronizing features.
