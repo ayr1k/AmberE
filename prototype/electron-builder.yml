@@ -3,7 +3,7 @@ productName: AmberE
 asar: false
 npmRebuild: false
 directories:
-  output: releases/1.1.0/AmberE
+  output: releases/1.1.1/AmberE
   buildResources: build
 files:
   - desktop/**/*
