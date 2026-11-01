@@ -14,8 +14,8 @@
     },
     {
       "path": ".github/workflows/windows.yml",
-      "bytes": 1570,
-      "sha256": "8656caa3e0f42db5c71d7b4d733345c759b0b537db64905aebaf7630bb00426c"
+      "bytes": 1888,
+      "sha256": "e1b98074d4f839ce264b06bea4d941f5b879a4bd3731c1e9e7a1a0c7a9416e18"
     },
     {
       "path": ".gitignore",
@@ -660,7 +660,7 @@
     {
       "path": "prototype/electron-builder.yml",
       "bytes": 1275,
-      "sha256": "f738886b1502528bf06b99cc5b7339787f3367f460bb0232bb2bd21f1c8bb1bb"
+      "sha256": "a2078dee8ed9f56a021e0d10c62b21706a67f0fd0dcc5a35206d144408f75205"
     },
     {
       "path": "prototype/index.html",
