@@ -109,8 +109,8 @@
     },
     {
       "path": "docs/TESTING.md",
-      "bytes": 372,
-      "sha256": "7eb069785b808355bfc0c7da013197b5868ddb96b63641bd6a3e3cba810c5a0e"
+      "bytes": 379,
+      "sha256": "4819cd6d51344a77f510663ea9b3fc0195ef2fa53d4bae4149f15c217b42c8c4"
     },
     {
       "path": "docs/THEMES.md",
@@ -184,8 +184,8 @@
     },
     {
       "path": "docs/zh-CN/TESTING.md",
-      "bytes": 355,
-      "sha256": "36d588257e3c2b39ab74d40d229888f0965f9efddc7aaed5d390e80d1307b0a2"
+      "bytes": 360,
+      "sha256": "8236a1da8845114b82051065ae13466fb2c448739036db95b9e870636e7f5c93"
     },
     {
       "path": "docs/zh-CN/THEMES.md",
@@ -914,8 +914,8 @@
     },
     {
       "path": "prototype/scripts/prepare-edition-source.mjs",
-      "bytes": 10646,
-      "sha256": "36ed40e8a765ef728ba2a22bb63e0e2dcb3a3f4e735113963f5a74d27eeef942"
+      "bytes": 10648,
+      "sha256": "7e47cd7d36d86174d5b55545baab0b9f39592484069e0f44784600ae65714ecb"
     },
     {
       "path": "prototype/scripts/prepare-github.mjs",
