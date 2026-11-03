@@ -685,7 +685,7 @@
     {
       "path": "prototype/electron-builder.yml",
       "bytes": 1275,
-      "sha256": "5687e41f46ab6dd57e8e1da22b733bc501f708c2afbf828ee207af76cfad137d"
+      "sha256": "864769baaf108d7feda96603a7de60ba4ae06fc23680c4e74c33115a92ba7013"
     },
     {
       "path": "prototype/index.html",
