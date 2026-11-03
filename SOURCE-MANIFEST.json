@@ -14,8 +14,8 @@
     },
     {
       "path": ".github/workflows/windows.yml",
-      "bytes": 1888,
-      "sha256": "b1bb6b0d30f324e87325ea92e3e79d62c63140d44c965075937fc1749e3e2924"
+      "bytes": 2173,
+      "sha256": "8d1e675087d59eb44d3c275f973b5fc969bcd1763c4de96c768aafe1dcf079e8"
     },
     {
       "path": ".gitignore",

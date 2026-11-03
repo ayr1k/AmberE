@@ -31,6 +31,9 @@ jobs:
       - name: Run regression tests with bounded concurrency
         shell: pwsh
         run: |
+          # Warm Windows PowerShell before the bounded process-start probe.
+          & "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -NonInteractive -Command "Get-Process -Id $PID | Out-Null"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           $testFiles = ((Get-Content package.json -Raw | ConvertFrom-Json).scripts.test -replace '^node --test ', '') -split ' '
           node --test --test-concurrency=2 @testFiles
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
@@ -41,7 +44,7 @@ jobs:
       - run: pnpm package:installer
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: amber-windows
+          name: ambere-windows
           path: prototype/releases/1.3.0/**/AmberE-*-Setup-x64.exe
           retention-days: 7
           if-no-files-found: error
