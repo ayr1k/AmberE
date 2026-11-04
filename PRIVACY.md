@@ -2,7 +2,7 @@
 
 [简体中文](docs/zh-CN/PRIVACY.md)
 
-AmberE does not offer Microsoft sign-in or include a Microsoft Client ID. Third-party passwords are sent to the HTTPS authentication address entered by the user and are not persisted. Saved tokens use Windows user encryption; it does not protect against malicious software running as the same Windows user.
+AmberE does not offer Microsoft sign-in or include a Microsoft Client ID. Third-party passwords are sent to the HTTPS authentication address entered by the user and are not persisted. Saved tokens use system credential protection; it does not protect against malicious software running as the same operating-system user.
 
 Data is stored separately in `%APPDATA%/AmberE`, with a configurable game-library location. No automatic account transfer occurs. Local account removal does not revoke server-side authorization. Upgrade backups may retain encrypted account records.
 
@@ -41,3 +41,9 @@ Server worlds, settings, console logs, downloaded content, recovery copies and J
 ## 1.3.4
 
 The seed map computes offline and stores seeds/markers locally; reading level.dat does not upload or modify worlds. Gradient text and palettes stay local. Original-launcher import copies only selected game data to a new instance and excludes account stores; metadata/download requests use the existing providers. The source directory is retained. Copied configurations and worlds may contain personal information; review before sharing.
+
+## 1.3.5 local identities and platforms
+
+Custom offline names and PNG skins remain in the encrypted account store. A loopback-only texture service serves one launch identity; it does not authenticate online or automatically upload skins. First use downloads and verifies the compatibility component from the official authlib-injector source.
+
+Credentials use Windows user protection, macOS Keychain or a secure Linux/FreeBSD keyring. The basic_text fallback is rejected. Default configuration roots are `%APPDATA%/<product>`, `~/Library/Application Support/<product>`, and `$XDG_CONFIG_HOME/<product>` (or `~/.config/<product>`); the game library is user-selected. System-bound account ciphertext is not portable authentication data.

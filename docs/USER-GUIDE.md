@@ -149,3 +149,12 @@ The map predicts supported Java vanilla generation, not explored chunks. It incl
 **Import .minecraft:** in Local → Instances, choose Import .minecraft, then select the original launcher folder and a recognized profile. Review the game, loader, source game directory and content groups, name the new instance, and choose Copy and install. Supported Vanilla/Fabric/Forge/NeoForge profiles are rebuilt from trusted metadata; verified local libraries/assets are reused. Custom gameDir and inherited versions are recognized. Close the source game before copying. Accounts, credentials and arbitrary launch arguments are not imported. The original folder stays intact; this is an independent copy, not a linked/shared game directory. Unknown custom clients are reported as unsupported.
 
 Cancellation or a later download failure preserves source files and may leave a partial new instance. For interrupted copying, import into a fresh instance before removing the partial copy. Prepare Java through the usual launch controls. Keep independent world backups; launcher import checks do not establish mod/game compatibility.
+
+## 1.3.5: offline names, skins and platforms
+
+Expand an offline identity's Edit name and skin controls in Accounts. Names use 3–16 ASCII letters, digits or underscores. Saving preserves the UUID. Import 64×64 or classic 64×32 PNG; slim arms require 64×64. Change the model or reset to the default skin. Name-based servers may treat a renamed player as a new character.
+
+AmberE still requires linked ownership and a valid offline lease; AmberE has no Microsoft sign-in. Skins are stored in the encrypted account record and served locally to the game. The compatibility component downloads on first use and is cached thereafter. Keep the launcher running; other players do not automatically see the skin.
+
+Use EXE on Windows, the matching CPU ZIP on macOS, and the package manager for the Linux DEB and dependencies. Linux requires a configured desktop keyring. FreeBSD is a server/tools experiment without full game-client support. See [platform setup and validation](../prototype/PLATFORMS-1.3.5.md). Encrypted accounts cannot be copied across operating systems as portable credentials.
+
