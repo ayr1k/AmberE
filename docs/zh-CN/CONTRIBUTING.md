@@ -28,4 +28,8 @@ pnpm desktop
 
 See [platform build inputs and verification limits](../../prototype/PLATFORMS-1.3.5.md). Publish the accepted package bytes unchanged. Keep architecture-specific native map engines and their source manifest; platform artifacts are not interchangeable. No signing credentials or private account data belong in source exports.
 
+## 任务交付与正式发布
+
+Dot 协调任务聊天并审核 PR。每个任务 PR 提供可下载的测试安装包、对应提交、验证结果与限制，由用户测试并决定是否合并。正式发布由用户另行要求，可汇总多个已合并 PR；从主分支构建正式包，同步发布说明、中英文文档及 GitHub Pages。
+
 本仓库默认构建 AmberE；`pnpm package:installer` 生成独立安装包，`pnpm release:source` 导出源码。共用核心来自 AMBER，保留上游版权与许可证；同步功能改动时保留本项目的认证限制、应用身份、品牌和更新仓库。

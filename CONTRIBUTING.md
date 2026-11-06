@@ -28,4 +28,8 @@ Project-owned changes use MPL-2.0. Preserve all dependency and asset notices. Pu
 
 See [platform build inputs and verification limits](prototype/PLATFORMS-1.3.5.md). Publish the accepted package bytes unchanged. Keep architecture-specific native map engines and their source manifest; platform artifacts are not interchangeable. No signing credentials or private account data belong in source exports.
 
+## Task delivery and releases
+
+Dot coordinates task chats and reviews their pull requests. Each task PR links downloadable test installers, the tested revision, validation and limitations. The user tests and decides whether to merge. A formal release is requested separately and may combine several merged PRs; it builds official packages from main and synchronizes release notes, bilingual documentation and GitHub Pages.
+
 This repository builds AmberE by default. `pnpm package:installer` creates its installer; `pnpm release:source` exports source. Shared core changes originate in AMBER; retain upstream copyrights and licenses, and preserve AmberE authentication restrictions, application identity, branding and update repository when synchronizing features.
