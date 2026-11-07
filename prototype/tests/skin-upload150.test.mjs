@@ -6,7 +6,7 @@ import {accountSkin} from '../desktop/skins130.mjs';
 import {mkdtemp,mkdir,writeFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
-import {uploadMicrosoftSkin150} from '../desktop/microsoft-skin150.mjs';
+import {uploadMicrosoftSkin150} from './fixtures/microsoft-skin150.mjs';
 import {providerSkinCapability150,uploadProviderSkin150} from '../desktop/provider-skin150.mjs';
 const png=Buffer.alloc(33);Buffer.from('89504e470d0a1a0a','hex').copy(png);png.write('IHDR',12);png.writeUInt32BE(64,16);png.writeUInt32BE(64,20);
 function fixture(type){const account={id:'fixture',type,uuid:'a'.repeat(32),name:'Test',accessToken:'old-fixture-token',clientToken:'fixture-client',server:'https://provider.example/api/yggdrasil/'};return {account,data:{accounts:[account]},exclusive:fn=>fn(),requireMicrosoft:()=>{},refreshMicrosoft:async a=>{a.accessToken='refreshed-fixture-token';},save:async()=>{},list:()=>[account],request:async(url)=>url.includes('sessionserver')?{id:account.uuid,properties:[{name:'uploadableTextures',value:'skin,cape'}]}:{accessToken:'provider-fixture-token',selectedProfile:{id:account.uuid}},fetcher:async()=>Response.json({id:account.uuid,skins:[{state:'ACTIVE'}]})};}

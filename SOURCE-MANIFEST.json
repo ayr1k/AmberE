@@ -2579,8 +2579,8 @@
     },
     {
       "path": "prototype/scripts/prepare-edition-source.mjs",
-      "bytes": 10994,
-      "sha256": "b4806e90310355804bc2cdf52623b0d9dc7a5f374d1a1fb382974b6bf6e93ac8"
+      "bytes": 11721,
+      "sha256": "6793c9a595613a10cb3b4a734b7312d06b50d25eb6dc4775cf4fe6600aa08094"
     },
     {
       "path": "prototype/scripts/prepare-github.mjs",
@@ -3548,6 +3548,11 @@
       "sha256": "0aa98f53bcd574da75500b023f72070c5c0dd2244d65e91e4811a89ef409aae8"
     },
     {
+      "path": "prototype/tests/fixtures/microsoft-skin150.mjs",
+      "bytes": 1914,
+      "sha256": "d8f1342ea4260dfd4d62ed1bb9d6da29a53a03f7aa71874754676c59de7a0762"
+    },
+    {
       "path": "prototype/tests/guided-fixture.mjs",
       "bytes": 4407,
       "sha256": "3b50488cb33dc52cb929b7d9ad24eee6c53c23d1488e9adffe6ca7cd9d77055f"
@@ -3650,7 +3655,7 @@
     {
       "path": "prototype/tests/skin-upload150.test.mjs",
       "bytes": 5665,
-      "sha256": "ff9b07212e6b605de8bdabef52100074aec9905ec81b5d6f9229cbee61e4bbb6"
+      "sha256": "b7f7111bfd2cfa15544ac2fb4877e1f9654f479121c4ac8f2749fdfb794a02ef"
     },
     {
       "path": "prototype/tests/themes110.test.mjs",
