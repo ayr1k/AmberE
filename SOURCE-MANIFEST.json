@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.5.1",
   "repository": "https://github.com/ayr1k/AmberE",
   "files": [
     {
@@ -25,7 +25,7 @@
     {
       "path": ".github/workflows/windows.yml",
       "bytes": 2882,
-      "sha256": "fbc22a6074050e4cea4def48f0e7d452d1ff4363548043e9e0f947c5418c5e17"
+      "sha256": "d65de95577ae493fdd6c292c882ba74c843b2af4be48650a08ddeb6eede9e739"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 34521,
-      "sha256": "29317ba67e4f38da270b45b8d171284baf7da44f2afb339f7fbbd958e1317e4d"
+      "bytes": 36127,
+      "sha256": "ff686a0cc2f343de2c1f2597e3e2bfb6d2fcb12873bf138876c6d1cd55b2541f"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "PRIVACY.md",
-      "bytes": 9652,
-      "sha256": "8c34d84961c43879669ab4ed62c80c964d9bb0cc263182ac82122dcef53e90b8"
+      "bytes": 10106,
+      "sha256": "f5872894de7552eac5c9abebc5f434b2ad8e8bf91288319eca82e72cc529f2f5"
     },
     {
       "path": "README.md",
-      "bytes": 5067,
-      "sha256": "7e1c33a6065c7384ce6c90f7967ea54d80d4ab346be11a9eb5d54ccd842e9a2c"
+      "bytes": 5051,
+      "sha256": "51340c63ee9012807e69f7ed2c1ce8878b594be056beacd9137e313b4b5cf14f"
     },
     {
       "path": "SECURITY.md",
@@ -134,8 +134,8 @@
     },
     {
       "path": "docs/USER-GUIDE.md",
-      "bytes": 40006,
-      "sha256": "19253c1ef44e367b66c3a35fd7a64b74aaf6e8bbc4e89fc4293bdbbd016ec6c5"
+      "bytes": 42284,
+      "sha256": "1485a6e85c7146c96f0ec0130b7a702c3eb7c6f5bb6b7c8e2c894c393a849814"
     },
     {
       "path": "docs/evidence/amber-custom-small-downloads.png",
@@ -364,8 +364,8 @@
     },
     {
       "path": "docs/zh-CN/CHANGELOG.md",
-      "bytes": 30111,
-      "sha256": "8dd9eaf13f33d808dec4660f041c0557c60820b7ab5f7045d14ac62c47fa05f0"
+      "bytes": 31471,
+      "sha256": "11da71636230142a9fd9f50030f7ddfe4dd4fd3552f4eae5aea7727ae067b255"
     },
     {
       "path": "docs/zh-CN/CONTRIBUTING.md",
@@ -379,13 +379,13 @@
     },
     {
       "path": "docs/zh-CN/PRIVACY.md",
-      "bytes": 8123,
-      "sha256": "4588ad249ff7009ab1f50fe026e0799bd3f129d044aee24c7abc40ee52e95157"
+      "bytes": 8523,
+      "sha256": "70786d03e4e12d92dee4007eb5a968836b346dc32a853f419a9bb96ccbd3fa94"
     },
     {
       "path": "docs/zh-CN/README.md",
-      "bytes": 4675,
-      "sha256": "895a09747c26bc345fc163489d3c38b71fc12a4cd0cc05bf9762c331cbc18411"
+      "bytes": 4669,
+      "sha256": "85c05d4a9a994b06dd802fbe2cee4cd40d2828345a79c1555a6bc226606a3c38"
     },
     {
       "path": "docs/zh-CN/ROLLBACK.md",
@@ -424,8 +424,8 @@
     },
     {
       "path": "docs/zh-CN/USER-GUIDE.md",
-      "bytes": 34327,
-      "sha256": "ce106b77a1779d397bd4f7c5bab1b2f5598e136f97b369a945213c69128ce974"
+      "bytes": 36151,
+      "sha256": "d36818de9a3377cd2ac41e3dd69a5c6de441845e0d650eabe53c1860aa618c18"
     },
     {
       "path": "prototype/.npmrc",
@@ -463,6 +463,11 @@
       "sha256": "3f2fdff667f5fa200541cf33784ef3b68e54489c49d0a76ba58052d0d5f15a13"
     },
     {
+      "path": "prototype/LOCAL-TEST-1.5.1.md",
+      "bytes": 7786,
+      "sha256": "10292dfdf80673814e91dbf2207d2c68e7cb7230f48cb8e7dc75fc50732be971"
+    },
+    {
       "path": "prototype/PLATFORMS-1.3.5.md",
       "bytes": 5102,
       "sha256": "7f2a697f4909abf27c0d8f47055d765e6892484e812446d114cc82d94c39f04a"
@@ -470,12 +475,12 @@
     {
       "path": "prototype/README.md",
       "bytes": 1636,
-      "sha256": "ac03d23cc943e2a62f89c793b7e3382412472692bb3ae64566c881127453d027"
+      "sha256": "7048ecc9294f6c38afca64f2c75e5a63fab4d6eff599345a826d373554be5b4f"
     },
     {
       "path": "prototype/RELEASE-ACCEPTANCE.md",
-      "bytes": 23565,
-      "sha256": "970b7eb47cff6a07c841b759143067d8aa54ab03f169d5d619ca776b347325f4"
+      "bytes": 25524,
+      "sha256": "262ce39e4bfc2ec5461933dd5ffbde20a039c0ea83e6f1d85d9a0813dd9debbc"
     },
     {
       "path": "prototype/THIRD_PARTY_NOTICES.md",
@@ -605,7 +610,7 @@
     {
       "path": "prototype/desktop/build-provenance.json",
       "bytes": 260,
-      "sha256": "ee470e318972f0ebd8d9cde4a76fa2d3a44995f71b8c3dba7da2d51c14450dee"
+      "sha256": "5d94ec5033dbb9df59f4b53e12f381dca4077e039625075ad74f89bc7fd36b16"
     },
     {
       "path": "prototype/desktop/bulk-content.mjs",
@@ -768,6 +773,11 @@
       "sha256": "0ccf2d76920bf3b9fd1032bef06bb624a8ae45bf74bb28c58b0764d170a1c4fc"
     },
     {
+      "path": "prototype/desktop/import-identify151.mjs",
+      "bytes": 7714,
+      "sha256": "b040e73891eefcb9d1d59e4f93ed1651b5d4d2b4c18f15549baa3855a6a84ca2"
+    },
+    {
       "path": "prototype/desktop/instance-health.mjs",
       "bytes": 4335,
       "sha256": "5829ed272a00cf66bc404f56c777abe45c3727733f06fcb20729d7068c374088"
@@ -899,8 +909,8 @@
     },
     {
       "path": "prototype/desktop/locales/catalog.json",
-      "bytes": 372462,
-      "sha256": "bb60d21781741b62976470bff29c11e452fb9c83075178ac031192f3dd78b24e"
+      "bytes": 379056,
+      "sha256": "1488846c6b1495d513c872935a499deb4a69ad15f2df1a919b7adf8505af1c68"
     },
     {
       "path": "prototype/desktop/localization.mjs",
@@ -914,8 +924,8 @@
     },
     {
       "path": "prototype/desktop/main.mjs",
-      "bytes": 77877,
-      "sha256": "3738a76b8f5ad48902c7bc1d8fcf5933fe363228057b182584aa471e08a73483"
+      "bytes": 78121,
+      "sha256": "3b963ac100abd26edf3c5ff196e06dada5df18751531d2cfcc33d3b37752b0ac"
     },
     {
       "path": "prototype/desktop/maintenance.mjs",
@@ -929,8 +939,8 @@
     },
     {
       "path": "prototype/desktop/minecraft134.mjs",
-      "bytes": 10651,
-      "sha256": "f8d92e91fd9b41b0f01a8364d401065e1c3613e9563c92def92f51dc7edb61b7"
+      "bytes": 12908,
+      "sha256": "eb1288fd591a0fd5353d7d58f3f0b062e36513c98561583bd50d478b46d2a121"
     },
     {
       "path": "prototype/desktop/mod-import.mjs",
@@ -2299,28 +2309,28 @@
     },
     {
       "path": "prototype/editions/ambere/changelog.en.md",
-      "bytes": 34521,
-      "sha256": "29317ba67e4f38da270b45b8d171284baf7da44f2afb339f7fbbd958e1317e4d"
+      "bytes": 36127,
+      "sha256": "ff686a0cc2f343de2c1f2597e3e2bfb6d2fcb12873bf138876c6d1cd55b2541f"
     },
     {
       "path": "prototype/editions/ambere/changelog.zh.md",
-      "bytes": 30111,
-      "sha256": "8dd9eaf13f33d808dec4660f041c0557c60820b7ab5f7045d14ac62c47fa05f0"
+      "bytes": 31471,
+      "sha256": "11da71636230142a9fd9f50030f7ddfe4dd4fd3552f4eae5aea7727ae067b255"
     },
     {
       "path": "prototype/editions/ambere/overview.en.md",
-      "bytes": 5067,
-      "sha256": "7e1c33a6065c7384ce6c90f7967ea54d80d4ab346be11a9eb5d54ccd842e9a2c"
+      "bytes": 5051,
+      "sha256": "51340c63ee9012807e69f7ed2c1ce8878b594be056beacd9137e313b4b5cf14f"
     },
     {
       "path": "prototype/editions/ambere/overview.zh.md",
-      "bytes": 4675,
-      "sha256": "895a09747c26bc345fc163489d3c38b71fc12a4cd0cc05bf9762c331cbc18411"
+      "bytes": 4669,
+      "sha256": "85c05d4a9a994b06dd802fbe2cee4cd40d2828345a79c1555a6bc226606a3c38"
     },
     {
       "path": "prototype/editions/ambere/testing.md",
-      "bytes": 23565,
-      "sha256": "970b7eb47cff6a07c841b759143067d8aa54ab03f169d5d619ca776b347325f4"
+      "bytes": 25524,
+      "sha256": "262ce39e4bfc2ec5461933dd5ffbde20a039c0ea83e6f1d85d9a0813dd9debbc"
     },
     {
       "path": "prototype/electron-builder.yml",
@@ -2334,8 +2344,8 @@
     },
     {
       "path": "prototype/package.json",
-      "bytes": 3092,
-      "sha256": "673a55a08c653e10167eac779cce24c7b5e6851991456b6fbfb5014f8ca36848"
+      "bytes": 3117,
+      "sha256": "ed9ab5331cf27130272107c021c70672d1fa9f8f1e5848a473cc4ae13bc8c608"
     },
     {
       "path": "prototype/pnpm-lock.yaml",
@@ -2570,7 +2580,7 @@
     {
       "path": "prototype/scripts/package-editions.mjs",
       "bytes": 7598,
-      "sha256": "5f7bcf2b1bea8f65b9471ab7d56b083d9e3290c6c9bee3cc277e8eb0c85a7384"
+      "sha256": "ad1627f5fe519ee605186acfd0e4ccd2b13e5b2998a4ac0aa8cdf99787d8b3b9"
     },
     {
       "path": "prototype/scripts/package-platforms135.py",
@@ -2584,8 +2594,8 @@
     },
     {
       "path": "prototype/scripts/prepare-github.mjs",
-      "bytes": 3919,
-      "sha256": "0e2d604b663f547aabbefdd1d03e306c7493d16b325d8d0d7620103a48d517f7"
+      "bytes": 3960,
+      "sha256": "5c5decda5e2312ece8483675ff3cf87ad671d042fecdce31615f2b977106bc67"
     },
     {
       "path": "prototype/scripts/prepare-sites-build.mjs",
@@ -2601,6 +2611,11 @@
       "path": "prototype/scripts/qa-graphics150.cjs",
       "bytes": 2643,
       "sha256": "0495c8c1e74fdd6c81854bc0da8586513f7046ce7fcfbade9569ba6389a6c287"
+    },
+    {
+      "path": "prototype/scripts/qa-import151.cjs",
+      "bytes": 12243,
+      "sha256": "5434f894defc5de2d6ce3775dca6ba43e9d6d503be65a1235201d0431deffdd1"
     },
     {
       "path": "prototype/scripts/qa-increment150.cjs",
@@ -2949,8 +2964,8 @@
     },
     {
       "path": "prototype/src/MinecraftImport134.jsx",
-      "bytes": 5331,
-      "sha256": "c59a3fcde594da8af4fffd8c6a383f59aad02b70632ef9f0081360e07acb2225"
+      "bytes": 8608,
+      "sha256": "31b13c1e81030cbfe3b49afa711be3e3685f74a55a53897698bd081ddfb9f415"
     },
     {
       "path": "prototype/src/ModImportPanel.jsx",
@@ -3434,8 +3449,8 @@
     },
     {
       "path": "prototype/src/workspace134.css",
-      "bytes": 5681,
-      "sha256": "e5346f9787f752e0c8ea90ae2209b1f7c10bfb531ab4542ae3cd8c166884c0c3"
+      "bytes": 6622,
+      "sha256": "e69b9b0406f3fe58906c068c93301bc425809649694cafd5a7d7ca26d71ef9ee"
     },
     {
       "path": "prototype/src/workspace135.css",
@@ -3566,6 +3581,11 @@
       "path": "prototype/tests/import123.test.mjs",
       "bytes": 12362,
       "sha256": "ff91d4f39aa3b313f33116009191eac496e822d9fd53bb39c78e9ebac2963891"
+    },
+    {
+      "path": "prototype/tests/import151.test.mjs",
+      "bytes": 17522,
+      "sha256": "6fd0863bd9d8d985c762d1717b6508f73a343c710e7dc628e9d0befadc128fe0"
     },
     {
       "path": "prototype/tests/model.test.mjs",
@@ -3734,8 +3754,8 @@
     },
     {
       "path": "prototype/tests/workspace134.test.mjs",
-      "bytes": 12576,
-      "sha256": "e88d8280ff213747ee860d968bb594b40a00708b2130b2b74db1a992d02c72b6"
+      "bytes": 12783,
+      "sha256": "644c08812c1fa1d4738de6678937919b3063c90113bd13980767cf06990cbde7"
     },
     {
       "path": "prototype/vite.config.mjs",
