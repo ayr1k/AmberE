@@ -1,3 +1,12 @@
+## 1.5.2
+
+- Add opt-in EasyTier room client environment synchronization. Hosts select a stopped client and review selected mods/top-level text configuration; guests preview signed versions, sources and content sizes and explicitly confirm. Each accepted revision creates a new independent instance, retaining existing games and personal data.
+- Use verified original Modrinth/CurseForge downloads where identified; unavailable or restricted platform downloads fail without host-transfer fallback. Unrecognized host-transferred files require explicit privacy, compatibility and redistribution review. Signed snapshots and hashes establish consistency, not mod safety.
+- Reuse verified caches, preserve incomplete instances and require fresh room preview/confirmation after interrupted setup. Completed instances retain ordinary task recovery. Revoking sharing disconnects synchronization and cancels unfinished setup while preserving game forwarding.
+- Refine host file selection, platform icons and narrow-window layout. Select all mods preserves chosen configuration and refuses the entire addition if it would exceed 500 total files; selected files remain removable at capacity. The limit includes configuration; do not omit required dependencies to fit.
+- Supports common single loaders, selected mod JARs and top-level text configuration; complex loader combinations, resource/shader packs and nested configuration remain unsupported. Real two-machine cross-network gameplay, NAT/relay combinations and actual modpack compatibility remain unverified.
+- Idea credit: **Bilibili user @北目宁游戏 (UID 391446396)**, who suggested a room where players confirm downloading the host's selected mods.
+
 ## 1.5.1
 
 - Fix existing .minecraft imports that confused merged/custom profile IDs with official base game versions or selected shared data instead of isolated profile data. Identify the game and loader using recognized metadata and verify them against official catalogs; ask for an explicit official version when evidence is missing/conflicting. Unknown clients, damaged inheritance and conflicting loaders remain blocked.
