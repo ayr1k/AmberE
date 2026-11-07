@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "1.5.2",
-  "commit": "b71e6e3cd5bd16720ccd81314480a0a41851b8c7",
+  "version": "1.5.3",
+  "commit": "e71faf2e49473152e0731795bb2eebe03857db3d",
   "taskHead": null,
   "eventSha": null,
   "dirty": false,
   "channel": "public",
   "workflow": null,
-  "builtAt": "2026-11-07T16:45:00.010Z",
+  "builtAt": "2026-11-07T18:39:27.598Z",
   "product": "AmberE"
 }

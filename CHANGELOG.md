@@ -1,3 +1,11 @@
+## 1.5.3
+
+- Extend explicit room content selection to resource/shader ZIPs and nested text configuration alongside mods. ZIPs remain intact and are not automatically enabled. Preserve original-platform restrictions, host privacy/redistribution review and explicit guest confirmation.
+- Apply consistent limits: 2,000 files, 256 MiB per file, 4 GiB selected content, 1 MiB text config and six nested folders. Bound the actual signed wire envelope to 4 MiB before publication and reception. Runtime/Java/loader downloads need additional space.
+- Stream host files with authenticated, checksum-verified range recovery. Retain cancelled partial downloads, but resume only after fresh confirmation of the current signed revision; verify full size/hash before installing.
+- Persist room/host-bound history and compare revisions against the last completed environment. After restart, resume the same unchanged unfinished target only when receipt, runtime and setup records agree. Conflicts require explicit preservation of the original and creation of a new independent instance; selected local edits are never silently overwritten.
+- New revisions still create independent instances and retain previous saves/edits. No automatic cleanup of instances, caches or snapshots. Real modpack/gameplay, cross-network/NAT/relay and live platform acceptance remain unverified; the 4 GiB limit is validated arithmetically, not by a full-size real modpack transfer.
+
 ## 1.5.2
 
 - Add opt-in EasyTier room client environment synchronization. Hosts select a stopped client and review selected mods/top-level text configuration; guests preview signed versions, sources and content sizes and explicitly confirm. Each accepted revision creates a new independent instance, retaining existing games and personal data.
