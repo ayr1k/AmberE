@@ -1,3 +1,14 @@
+## 1.6.0
+
+- Save default Local/Online workspace and startup page, while preserving onboarding recovery.
+- Save graphical launch plans per instance: ordered Sakura tunnel, MySQL, server readiness, wait, one-line command and normal-stop verified-backup modules. Migrate existing choices and show step results. Readiness/stop waits accept 1–3600 whole seconds, default 120. Failure or timeout skips later steps; cancellation preserves already-started services and never replays the plan on late readiness or launcher restart.
+- Allow tunnels before server startup; distinguish provider connection, target readiness and actual gameplay reachability. Backup waits for normal server exit and verifies the snapshot; MySQL data retains its separate backup workflow. No live-world or forced-stop backup is added.
+- Default window close minimizes to tray while servers or networking are active; otherwise it exits. Custom policies remain. Explicit exit waits for normal saving/backups and cleans up owned services, reporting errors rather than falsely declaring success.
+- Select other upstream server game versions, Paper builds, Fabric Loader/Installer and Quilt Loader versions. Verified official EasyTier versions install separately and switch only after checks; fix cancellation while queued. New Windows MySQL databases offer verified 8.4.13 / 8.4.11, preserving existing creation versions and backups without in-place migration. This is a limited catalog, not all usable versions. Sakura historical binary selection remains incomplete because a verified catalog was not obtained.
+- Add manual Windows memory optimization: Conservative targets the launcher main process; Aggressive also targets its Electron children and requires confirmation both when enabled and on every run. Off after restart, with process-identity checks. No game/Java/server/database/other-app targeting, periodic cleanup or guaranteed FPS/permanent-memory benefit.
+- Align EasyTier download controls and separate task-center heading, description and responsive search/density controls.
+- Memory optimization was suggested by Bilibili user **@萨拉赫蒙-十恶不赦 (UID 2003495984)**. Preserve independent AMBER/AmberE account, data and update policies.
+
 ## 1.5.4
 
 - Extend storage scanning to room synchronization data, server instances and server recycle storage. Deduplicate hardlinked file identities; show bounded logical bytes, reclaimable verified update files and protected activity without claiming allocated disk usage or guaranteed freed space.
