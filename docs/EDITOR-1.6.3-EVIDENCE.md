@@ -1,0 +1,33 @@
+# 1.6.3 formal release / 正式发布
+
+PR #13 merged as `5634598eec5e5daf0b1f0b0528fbea6a5f974b34`; accepted final head: `795cefa7ceaa9b913fbc9c3fa7bb40102bff781e`. The user confirmed the merge and requested the complete formal release on 2026-11-09 (America/New_York). Official packages use **1.6.3/public**. The independent targeted COMMENT review submitted on 2026-11-09 at 21:00:18 UTC passed backup-boundary and comparison-layout checks for this head, retaining earlier valid evidence. It is not represented as full user/installer acceptance. The user's subsequent merge and release instruction govern publication. Earlier candidate/local-channel/pending-review language below records its historical stage. This release chat does not repeat content review; see RELEASE-ACCEPTANCE.md for formal verification.
+
+PR #13 已合并并获用户明确正式发布授权。最终提交的独立定向复审通过；保留此前有效证据与原验收范围，不把它扩大为完整安装验收。下方测试阶段的 local 渠道、待审核及禁止发布等描述保留历史归属，本次正式发行使用 1.6.3/public，不新增内容审核。
+
+# 1.6.3 editor evidence
+
+The task starts from published main `912b90b33b24810c8bfc9f6463eacae6dade4848`, after merged PR #12 and release documentation. The original workspace exposed no Git history or remote; a separate checkout preserves it unchanged. One task branch is used: `task/1.6.3-instance-editor`.
+
+## Reproduction before fixes
+
+- `scripts/reproduce-editor163.mjs` loads the immutable 1.6.2 backend through `git show` and injects an external write immediately after the final hash check and before rename. On disposable Windows files the save returned success; disk held `editor-buffer`, the backup held `original`, and `external-after-final-check` was lost. This was reproduced, not inferred from static code. Its first sandbox run hit EPERM on synthetic replacement; the supported elevated run completed the experiment.
+- `scripts/qa-editor-races163.cjs --baseline` was run against the built 1.6.2 UI with explicitly synthetic delayed IPC responses after asserting isolated userData/storage. Releasing B before A selected `a.txt`; completing A's backup after switching to B put `BACKUP A` into B. Initial test teardown emitted a dialog-close error after recording these assertions; the runner was corrected to handle teardown and the fixed cases are run without the baseline flag.
+
+## Verification
+
+Review-fix full local run: all 755 tests passed with no failures/skips (751 regressions plus four static-serving tests, `node --test --test-concurrency=2 tests/*.test.mjs`). Source/license inspection of 460 files, 3,097 bilingual entries and production build also pass. Historical counts below describe the earlier task revision, not additional current-head runs.
+
+- Full local regression: 749 passed, zero failed/skipped, bounded concurrency 2. Includes 13 new editor/session tests. Source/license check, 3,097 bilingual catalog entries and four static-serving checks passed. New editor strings use the editor's existing inline bilingual convention, outside the catalog count.
+- Targeted backend regression after exclusive recovery fallback: 16 passed (13 new and 3 existing workspace tests). Covers pre-save/preparation/final-check races, competing creation, replacement identity, read-only/missing files, retry, running protection, path/instance/token boundaries, Chinese/BOM/CRLF, unique backups and temporary-file cleanup.
+- `qa-editor-races163.cjs`: corrected response order selects B, stale backup cannot change B. `qa-editor163.cjs` passes nine native UI case groups with no renderer errors: metadata/path, same-name tabs, jump and synthetic Chinese composition; external conflict/compare/cancel/reload/draft recovery; backup comparison/cancel/restore/BOM/CRLF; read-only/missing-file retention, cancelled close and refresh; mixed-ending read-only; and four Chinese/English light/dark window configurations (requested 800/1024/1440/1600 widths; native minimum width still applies). Evidence and screenshots are in ignored `prototype/review163`.
+- Production build succeeds with the existing large-bundle warning. No new dependency is added to the application. pnpm 11.25.0 and Node 24 are retained. Playwright is installed only under the ignored task QA directory.
+
+## Guarantees and residual risks
+
+The initial `b74e5b6` scroll adjustment was insufficient. Independent review reproduced footer overflow of 58.875px at actual 1024×768 and 94.875px at actual 860×900 (requested 800×900), overlapping the comparison by 42.875px and 78.875px. The review fix removes the editor's shared height observer and uses intrinsic CSS layout with a viewport-based minimum and contained code/tree content. Other catalog consumers retain their original behavior. Comparison targets account for the sticky header.
+
+The review regression `scripts/qa-editor-layout163.cjs` passes all 24 cases: Chinese/English, light/dark, four native window sizes, zoom 1/1.25, and disk/conflict/backup comparisons. Fixtures include 100 files and a long document. Assertions cover layout/footer/code boundaries, no horizontal overflow or runaway height, and visible heading/summary/action hit targets after scrolling each into view. At 1024×768 and 860×900, zoom 1, footer overflow is -1px and disk/conflict overlap is -17px (negative means separation). At native 860×900, zoom 1.25, actual CSS viewport is 688×720; footer overflow is approximately -0.8px and separation is 16.8px. Full native bounds, viewport, zoom and hit-test evidence are recorded in `layout-fixed-review.json`; the pre-fix four-case run is `layout-baseline-review.json`.
+
+Review also reproduced a new backup disappearing behind 100 entries when the displaced source retained an old mtime. History now dates and sorts valid legacy/numeric and UUID tokens by their creation timestamp without touching file bytes or mtimes. Two added regressions failed before the fix and pass afterward, including the 100-entry boundary and preservation of all older backups; the affected suite now passes 18 tests. Prior race, encoding, permission and isolation evidence above is retained with its original scope. Both earlier `c45f739` and `b74e5b6` installers are superseded; use only the paired final-head artifacts.
+
+See [bilingual test guide](../prototype/LOCAL-TEST-1.6.3.md). Preserving the actual displaced entry addresses the demonstrated final-check overwrite window; exclusive creation avoids clobbering a recreated target. A failed commit attempts exclusive copy recovery and retains the recovery filename. There is still a brief missing-target interval and no crash journal, universal filesystem locking or power-loss durability guarantee. The UI has session-only previous-draft recovery, explicit confirmations, metadata and stale-response checks. Real OS IME, full install/upgrade and non-Windows desktop acceptance remain separate.
