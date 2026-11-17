@@ -76,7 +76,7 @@ Appearance & themes starts with Basics; reveal More settings or Advanced editing
 
 ## Theme editing and calendar (1.2.1)
 
-Get official themes in the [theme store](https://ayr1k.github.io/#/themes). Import and apply, or edit first. The appearance editor retains unapplied drafts; recovering a draft still requires explicit application. Save to library creates a separate theme without switching appearance; duplicate names require renaming. Export requires a nonempty name.
+Get official themes in the [theme store](https://amber.ayuki-ayr1k.com/#/themes). Import and apply, or edit first. The appearance editor retains unapplied drafts; recovering a draft still requires explicit application. Save to library creates a separate theme without switching appearance; duplicate names require renaming. Export requires a nonempty name.
 
 The calendar initially shows only its month and dates. Select a date for records, or use its more button for filters and recording controls. Top navigation has a dedicated About entry instead of repeated footers on every page.
 
@@ -378,3 +378,11 @@ For an existing target, open its migration action, select a registered source li
 The resolver downloads compatible Modrinth client releases and required dependencies through verified installation transactions; it does not copy old JARs, worlds, settings, accounts, addresses or room secrets. Inspect unknown, missing and conflicting items; author compatibility declarations do not guarantee playability. New instances/clients require a managed library. Identical physical source/target directories are rejected, both ends should be stopped and shared targets require explicit acknowledgement.
 
 Source, target, content, registration or dependency changes require a new preview. Cancellation stops subsequent work but does not undo verified installations already completed; reports distinguish installed, skipped, failed and cancelled items. Interrupted setup retains its instance and recovery plan. Cancellation during final library acquisition is rechecked before creating or migrating through the workflow.
+
+[1.7.5 update sources / 更新源](UPDATE-SOURCES-1.7.5.md)
+
+## 1.7.5: launcher update sources
+
+Choose GitHub global or the official Hong Kong mirror in the launcher update panel, then check for updates. Source and stable/preview channel are saved independently; old settings default to GitHub and the mirror does not support preview. Cancel an active operation and wait for it to settle before switching. Retry failures or explicitly select another source.
+
+The mirror transports installer bytes only: checks, download refresh and installation still require GitHub. Synchronization may lag; no speed improvement is promised. Product, platform, size, digest and release identity are revalidated; expired or changed candidates require a new check. In-app targets are Windows x64, macOS x64/arm64 and Linux x64; other targets require manual downloads. Stop games/servers and back up application data and game libraries before upgrading. See [update-source details](UPDATE-SOURCES-1.7.5.md).
